@@ -6,7 +6,7 @@ spec:
   securityContext:
     seccompProfile:
       type: Localhost
-      localhostProfile: profiles/violation.json # Profile from local node
+      localhostProfile: profiles/relaxed-profile.json # Profile from local node /var/lib/kubelet/seccomp
   containers:
   - name: nginx
     image: nginx
